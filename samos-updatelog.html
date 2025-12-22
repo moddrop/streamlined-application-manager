@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SAMOS: samos | operatingsystem</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <style>
+        .header {
+            gap: 35px;
+            display: flex;
+            height: 160px;
+            width: 1000px;
+            background: #757575;
+            background: -moz-linear-gradient(top, #757575 0%, rgb(42, 46, 160) 0%, #1f193d 100%);
+            background: -webkit-linear-gradient(top, #757575 0%, rgb(42, 46, 160) 0%, #1f193d 100%);
+            background: linear-gradient(to bottom, #757575 0%, rgb(42, 46, 160) 0%, #1f193d 100%);
+            margin: auto;
+            text-align: center;
+        }
+
+        .header h1 {
+            color: white;
+        }
+
+        .header img {
+            border: grey solid;
+        }
+
+        .about {
+            display: flex;
+            height: 130px;
+            width: 700px;
+            background-color: rgb(217, 217, 217);
+            margin: auto;
+            text-align: center;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("https://img.freepik.com/free-vector/beautiful-white-cloud-blue-sky-background_1035-23406.jpg?semt=ais_hybrid&w=740&q=80");
+            background-size: cover;
+        }
+
+        .versions,
+        #kss,
+        #k,
+        #samoffice {
+            display: block;
+            background-color: rgb(217, 217, 217);
+            margin: auto;
+            padding: 0;
+            gap: 5px;
+            width: 700px;
+        }
+
+        .card {
+            background: linear-gradient(to bottom, #757575 0%, rgb(255, 255, 255) 0%, #5d5d5d 100%);
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            background: linear-gradient(to bottom, #757575 0%, rgb(42, 46, 160) 0%, #1f1a35 100%);
+            color: white;
+            padding: 5px;
+        }
+
+        a {
+            background-color: #4aa04a;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            width: fit-content;
+            border: 1px solid black;
+            padding: 5px;
+            font-weight: bold;
+            border-radius: 4px;
+            display: block;
+        }
+
+        a:hover {
+            color: white;
+            background-color: #3d7c3d;
+        }
+
+        .footer {
+            height: 50px;
+            width: 700px;
+            background: linear-gradient(to bottom, #757575 0%, rgb(42, 46, 160) 0%, #1f193d 100%);
+            margin: auto;
+            text-align: center;
+            color: white;
+        }
+
+        .main-container {
+            display: flex;
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .sidebar {
+            width: 180px;
+            background: linear-gradient(
+                to bottom,
+                #e6e6e6 0%,
+                #cccccc 10%,
+                #b3b3b3 20%,
+                #999999 30%,
+                #b3b3b3 40%,
+                #cccccc 50%,
+                #e6e6e6 60%,
+                #f2f2f2 70%,
+                #ffffff 80%,
+                #e0e0e0 90%,
+                #c0c0c0 100%
+            );
+            border-right: 2px solid #666;
+            padding: 10px 0;
+            box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: block;
+        }
+
+        .sidebar li {
+            margin: 12px 0;
+        }
+
+        .sidebar a {
+            display: block;
+            width: 140px;
+            margin: 0 auto;
+            padding: 6px;
+            background-color: #4A75A0;
+            color: white;
+            text-decoration: none;
+            border: 1px solid #222;
+            border-radius: 4px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .sidebar a:hover {
+            background-color: #2C527A;
+            color: white;
+        }
+
+        .content {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        .versions,
+        #kss,
+        #k,
+        #samoffice,
+        .about,
+        .footer {
+            width: auto;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="logo.png">
+        <h1>samos | operating system</h1>
+        <h1>streamlined application manager </h1>
+    </div>
+
+    <div class="main-container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#kss">K Style Sheets</a></li>
+                <li><a href="#k">K Programming Language</a></li>
+                <li><a href="#samoffice">SamOFFICE</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <section class="about">
+                <p>Samos, Streamlined Application Manager, originally created by "md", is a Javascript webbrowser attempt at
+                    making a fully coded file/application
+                    executor. Samos uses basic colors as the default red blue and green default css colors. All the source code
+                    will be in zipped files and all of the versions can be executed by the links given below under the cards.
+                </p>
+            </section>
+
+            <section class="versions">
+                <div class="card">
+                    <h2>SAMOS: VERSION BETA</h2>
+                    <p>First BETA</p>
+                    <ul>
+                        <li>Added Text file uploader</li>
+                        <li>Added HTML Editor</li>
+                        <li>Added Music file uploader</li>
+                        <li>Added Image file uploader</li>
+                    </ul>
+                    <a href="samos-beta.html">Launch SAMOS BETA</a>
+                    <a href="SAMOSBETA.zip" download>Download SAMOS BETA source code</a>
+                    <img width="100px" src="titlecard-samosbeta.png">
+                </div>
+
+                <div class="card">
+                    <h2>SAMOS: VERSION 1.0</h2>
+                    <p>Minor Update</p>
+                    <ul>
+                        <li>Added few programs</li>
+                        <li>Transported volume mixer to a button</li>
+                    </ul>
+                    <a href="samos-version-1.html">Launch SAMOS v1.0</a>
+                    <a href="SAMOS1.0.zip" download>Download v1.0 source code</a>
+                    <img width="100px" src="titlecard-samosv1.png">
+                </div>
+
+                <div class="card">
+                    <h2>SAMOS: VERSION 1.1</h2>
+                    <p><img width="50px" src="new.gif">BIG UPDATE<img width="50px" src="new.gif"></p>
+                    <ul>
+                        <li>Piano tune editor (NOT FINISHED)</li>
+                        <li>Updated SAM OFFICE with Notes and Spreadsheets application</li>
+                        <li>Created slots for K Compiler and Games (NOT FINISHED)</li>
+                        <li>Official prototype python version made (NOT FINISHED)</li>
+                        <li>3d preset slots along with a home directory (NOT FINISHED)</li>
+                        <li>Full UI change along with fonts</li>
+                    </ul>
+                    <a href="samos-version-1.1.html">Launch SAMOS v1.1</a>
+                    <a href="SAMOS1.1.zip" download>Download v1.1 source code</a>
+                    <a href="py-samosai.py" download>Download PROTOTYPE PyQt5 source code</a>
+                    <img width="100px" src="titlecard-samosv1.1.png">
+                </div>
+
+                <div class="card">
+                    <h2>SAMOS: VERSION 1.2</h2>
+                    <p>UPDATE</p>
+                    <ul>
+
+                    </ul>
+                    <a href="samos-version-1.2.html">Launch SAMOS v1.2</a>
+                    <a href="" download>Download v1.2 source code</a>
+                    <img width="100px" src="titlecard-samosv1.1.png">
+                </div>
+            </section>
+
+            <br>
+            <hr>
+
+            <section id="kss">
+                <div class="card">
+                    <h2>K Style Sheets</h2>
+                    <p>K Style Sheets is a library in the K Programming Language for handling styles.
+                        The structure is very similar to CSS (Casading Style Sheets).
+                    </p>
+                    <img width="100px" src="titlecard-kss.png">
+                    <p>VERSIONS KSS</p>
+                    <ul>
+                        <li>KSS 1.0 - SamOS 1.2</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="k">
+                <div class="card">
+                    <h2>K Programming Language</h2>
+                    <p>The K Programming Language is the universal language of SamOS, though it not used to build it. The K
+                        Programming lanuage is Streamlined based
+                    </p>
+                    <img width="100px" src="titlecard-k.png">
+                    <p>VERSIONS K</p>
+                    <ul>
+                        <li>K 1.0 -  SamOS 1.2</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="samoffice">
+                <div class="card">
+                    <h2>Sam Office</h2>
+                    <p>SAM Office is the series of applications in SamOS meant to be used as daily word processing,
+                        spreadsheets, and slideshow applications.</p>
+                    <img width="100px" src="titlecard-samoffice.png">
+                    <p>VERSIONS Sam Office</p>
+                    <ul>
+                        <li>Sam Office 1.0 - SamOS 1.1</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="footer">
+                <img width="40px" src="https://blob.gifcities.org/gifcities/YGOBEUMWQRN6EK3VW6M5C5JXVDEFV4SY.gif">
+                SAMOS | operating system
+                END OF WEBSITE
+                <img width="40px" src="https://blob.gifcities.org/gifcities/YGOBEUMWQRN6EK3VW6M5C5JXVDEFV4SY.gif">
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

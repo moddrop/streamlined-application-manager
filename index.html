@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Draggable Box</title>
+    <style>
+        body {
+            background: #e0e0e0;
+            font-family: sans-serif;
+        }
+
+        #notesBox {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            width: 300px;
+            height: 200px;
+            background: rgb(194, 194, 194);
+            border: 2px solid black;
+            overflow: auto;
+        }
+
+        #notesHeader {
+            background: blue;
+            color: white;
+            padding: 3px;
+            font-weight: bold;
+            cursor: move;
+            user-select: none;
+        }
+
+        #closeNotes {
+            float: right;
+            background: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 0 6px;
+        }
+
+        #rc-box {
+            background-color: none;
+            color: white;
+            width: fit-content;
+            height: fit-content;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="everything">
+        <div id="rc-box">
+            <ul>
+                <li>f</li>
+                <li>f</li>
+                <li>f</li>
+                <li>f</li>
+                <li>f</li>
+                <li>f</li>
+
+            </ul>
+        </div>
+        <div id="notesBox" ondblclick="rcbox()">
+            <div id="notesHeader">
+                Box Title
+                <button id="closeNotes">X</button>
+            </div>
+            This is the text inside the box.
+            It can have multiple lines.
+            And scrolls if it gets long.
+            This is the text inside the box.
+        </div>
+
+        <textarea id="texter" cols="70" rows="30" onkeyup="keyup()">
+		</textarea>
+        <br>
+        <p id="status"></p>
+    </div>
+
+
+    <script>
+        const notesBox = document.getElementById("notesBox");
+        const notesHeader = document.getElementById("notesHeader");
+        const closeNotes = document.getElementById("closeNotes");
+
+        closeNotes.onclick = () => notesBox.remove();
+
+        let offsetX, offsetY, dragging = false;
+        notesHeader.onmousedown = e => {
+            dragging = true;
+            offsetX = e.clientX - notesBox.offsetLeft;
+            offsetY = e.clientY - notesBox.offsetTop;
+        };
+        document.onmouseup = () => dragging = false;
+        document.onmousemove = e => {
+            if (!dragging) return;
+            notesBox.style.left = (e.clientX - offsetX) + "px";
+            notesBox.style.top = (e.clientY - offsetY) + "px";
+        };
+
+        function keyup() {
+            var count =
+                document.getElementById("texter").value.length;
+            var output = "letter count: " + count;
+            document.getElementById("status").
+                innerHTML = output;
+        }
+        const rcbox = document.getElementById("rd-box");
+        function rcbox() {
+            document.getElementById('rc-box').style.display="block";
+        }
+    </script>
+
+</body>
+
+</html>
