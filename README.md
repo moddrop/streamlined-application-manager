@@ -1,4 +1,4 @@
-#SAMOS
+# SAMOS
 
 Samos, Streamlined Application Manager, originally created by "md", is a Javascript webbrowser attempt at
 making a fully coded file/application executor. Samos uses basic colors as the default red blue and green default css colors. All the source code 
