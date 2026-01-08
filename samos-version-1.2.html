@@ -7,11 +7,11 @@
 	<style>
         @import 'https://fonts.googleapis.com/css?family=Press+Start+2P';
 
-        * {font-family: 'Press Start 2P'; font-size: 8px; font-weight: lighter;}
+        * {font-family: 'Press Start 2P'; font-size: 8px; font-weight: lighter; max-width: 100%; max-height: 100%;}
 
         /* container */
         #container {display: flex; height: fit-content; width: fit-content;}
-
+        
         /* flex */
         .flex {display: flex; gap: 5px;}
 
@@ -48,7 +48,7 @@
         .sectionflex h3 {color: purple; text-align: center;}
 
         /* desktoparea */
-        .desktoparea {display: block; gap: 5px; height: 300px; width: 1500px;}
+        .desktoparea {display: block; gap: 5px; height: 600px; width: 1500px;}
         .desktoparea h2 {color: blue; text-align: center;}
         .desktoparea h3 {color: red; text-align: center;}
         
@@ -171,7 +171,10 @@
                 <button class="swanmelody-key-black" onclick="DSHARP()"></button>
                 <button class="swanmelody-key-white" onclick="E()"></button>
                 <button class="swanmelody-key-white" onclick="F()"></button>
-
+                <button class="swanmelody-key-black" onclick="FSHARP()"></button>
+                <button class="swanmelody-key-white" onclick="G()"></button>
+                <button class="swanmelody-key-black" onclick="GSHARP()"></button>
+                <button class="swanmelody-key-black" onclick="A()"></button>
             </div>
             <div id="notesBox">
                 <div id="notesHeader">
