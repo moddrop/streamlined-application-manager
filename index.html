@@ -55,8 +55,29 @@
         }
 
         .card {
-            background: linear-gradient(to bottom, #757575 0%, rgb(255, 255, 255) 0%, #5d5d5d 100%);
+            background: linear-gradient(
+                to bottom,
+                #e6e6e6 0%,
+                #cccccc 10%,
+                #b3b3b3 20%,
+                #999999 30%,
+                #b3b3b3 40%,
+                #cccccc 50%,
+                #e6e6e6 60%,
+                #f2f2f2 70%,
+                #ffffff 80%,
+                #e0e0e0 90%,
+                #c0c0c0 100%
+            );
             margin-bottom: 15px;
+            border-right: 1px solid #666;
+            gap: 5px;
+            transition: transform 0.3s ease-in-out
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+            box-shadow: 2px 2px 5px 2px black;
         }
 
         .card h2 {
@@ -76,11 +97,15 @@
             font-weight: bold;
             border-radius: 4px;
             display: block;
+            transition: transform 0.3s ease-in-out
         }
 
         a:hover {
             color: white;
             background-color: #3d7c3d;
+            transform: scale(1.1);
+            box-shadow: 2px 2px 5px 2px black;
+            
         }
 
         .footer {
