@@ -55,24 +55,31 @@
         }
 
         .card {
-            background: linear-gradient(
-                to bottom,
-                #e6e6e6 0%,
-                #cccccc 10%,
-                #b3b3b3 20%,
-                #999999 30%,
-                #b3b3b3 40%,
-                #cccccc 50%,
-                #e6e6e6 60%,
-                #f2f2f2 70%,
-                #ffffff 80%,
-                #e0e0e0 90%,
-                #c0c0c0 100%
-            );
+            background: linear-gradient(to bottom,
+                    #e6e6e6 0%,
+                    #cccccc 10%,
+                    #b3b3b3 20%,
+                    #999999 30%,
+                    #b3b3b3 40%,
+                    #cccccc 50%,
+                    #e6e6e6 60%,
+                    #f2f2f2 70%,
+                    #ffffff 80%,
+                    #e0e0e0 90%,
+                    #c0c0c0 100%);
             margin-bottom: 15px;
             border-right: 1px solid #666;
             gap: 5px;
-            transition: transform 0.3s ease-in-out
+            transition: transform 0.3s ease-in-out;
+        }
+
+        iframe {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        iframe:hover {
+            transform: scale(1.1);
+            box-shadow: 2px 2px 5px 2px black;
         }
 
         .card:hover {
@@ -105,7 +112,7 @@
             background-color: #3d7c3d;
             transform: scale(1.1);
             box-shadow: 2px 2px 5px 2px black;
-            
+
         }
 
         .footer {
@@ -126,45 +133,41 @@
 
         .sidebar {
             width: 180px;
-            background: linear-gradient(
-                to bottom,
-                #e6e6e6 0%,
-                #cccccc 10%,
-                #b3b3b3 20%,
-                #999999 30%,
-                #b3b3b3 40%,
-                #cccccc 50%,
-                #e6e6e6 60%,
-                #f2f2f2 70%,
-                #ffffff 80%,
-                #e0e0e0 90%,
-                #c0c0c0 100%
-            );
+            background: linear-gradient(to bottom,
+                    #e6e6e6 0%,
+                    #cccccc 10%,
+                    #b3b3b3 20%,
+                    #999999 30%,
+                    #b3b3b3 40%,
+                    #cccccc 50%,
+                    #e6e6e6 60%,
+                    #f2f2f2 70%,
+                    #ffffff 80%,
+                    #e0e0e0 90%,
+                    #c0c0c0 100%);
             border-right: 2px solid #666;
             padding: 10px 0;
-            box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
+            box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
             text-align: center;
         }
 
         .updates {
             width: 190px;
-            background: linear-gradient(
-                to bottom,
-                #e6e6e6 0%,
-                #cccccc 10%,
-                #b3b3b3 20%,
-                #999999 30%,
-                #b3b3b3 40%,
-                #cccccc 50%,
-                #e6e6e6 60%,
-                #f2f2f2 70%,
-                #ffffff 80%,
-                #e0e0e0 90%,
-                #c0c0c0 100%
-            );
+            background: linear-gradient(to bottom,
+                    #e6e6e6 0%,
+                    #cccccc 10%,
+                    #b3b3b3 20%,
+                    #999999 30%,
+                    #b3b3b3 40%,
+                    #cccccc 50%,
+                    #e6e6e6 60%,
+                    #f2f2f2 70%,
+                    #ffffff 80%,
+                    #e0e0e0 90%,
+                    #c0c0c0 100%);
             border-right: 2px solid #666;
             padding: 10px 0;
-            box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
+            box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
             text-align: center;
         }
 
@@ -213,16 +216,43 @@
             margin-left: 0;
             margin-right: 0;
         }
+
+        .banner {
+            text-align: center;
+            background: linear-gradient(to bottom,
+                    #630808 0%,
+                    #7a1010 10%,
+                    #8d2020  20%,
+                    #ac2727 30%,
+                    #d61313 40%,
+                    #ff2525 50%,
+                    #d61313 60%,
+                    #ac2727 70%,
+                    #8d2020 80%,
+                    #581414 90%,
+                    #520a0a 100%);
+            height: 50px;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 40px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
     </style>
 </head>
 
 <body>
+    <div class="banner">
+        <marquee>New Piano notes, (SAMOS 1.2), and new exclusive version. Check it out!</marquee>
+    </div>
+
+    <br>
     <div class="header">
         <img src="logo.png">
         <h1>samos | operating system</h1>
         <h1>streamlined application manager </h1>
     </div>
-
+    
     <div class="main-container">
         <nav class="sidebar">
             <ul>
@@ -236,10 +266,13 @@
 
         <div class="content">
             <section class="about">
-                <p>Samos, Streamlined Application Manager, originally created by "md", is a Javascript webbrowser attempt at
+                <p>Samos, Streamlined Application Manager, originally created by "md", is a Javascript webbrowser
+                    attempt at
                     making a fully coded file/application
-                    executor. Samos uses basic colors as the default red blue and green default css colors. All the source code
-                    will be in zipped files and all of the versions can be executed by the links given below under the cards.
+                    executor. Samos uses basic colors as the default red blue and green default css colors. All the
+                    source code
+                    will be in zipped files and all of the versions can be executed by the links given below under the
+                    cards.
                 </p>
             </section>
 
@@ -333,13 +366,14 @@
             <section id="k">
                 <div class="card">
                     <h2>K Programming Language</h2>
-                    <p>The K Programming Language is the universal language of SamOS, though it not used to build it. The K
+                    <p>The K Programming Language is the universal language of SamOS, though it not used to build it.
+                        The K
                         Programming lanuage is Streamlined based
                     </p>
                     <img width="100px" src="titlecard-k.png">
                     <p>VERSIONS K</p>
                     <ul>
-                        <li>K 1.0 -  SamOS 1.2</li>
+                        <li>K 1.0 - SamOS 1.2</li>
                     </ul>
                 </div>
             </section>
@@ -366,7 +400,8 @@
         </div>
 
         <nav class="updates">
-            <iframe src="https://github.com/moddrop/streamlined-application-manager/deployments" width="170" height="170"></iframe>
+            <p>Deployments</p>
+            <iframe src="deployments.html" width="170" height="1500px"></iframe>
         </nav>
     </div>
 </body>
